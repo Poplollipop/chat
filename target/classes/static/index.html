@@ -1,51 +1,59 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant"> <!-- 定義文件類型為 HTML5，語言為繁體中文 -->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- 設置網頁字符集為 UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>WebSocket Chat</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <!-- 設置網頁視窗的大小和縮放，適配移動設備 -->
+    <title>WebSocket Chat</title> <!-- 網頁標題 -->
+    <link rel="stylesheet" href="/css/main.css" /> <!-- 引入外部樣式表 -->
 </head>
 <body>
 
+<!-- 用戶名頁面 -->
 <div id="username-page">
     <div class="username-page-container">
-        <h1 class="title">輸入你的名稱進入聊天室</h1>
-        <form id="usernameForm" name="usernameForm">
+        <h1 class="title">輸入你的名稱進入聊天室</h1> <!-- 提示用戶輸入名稱 -->
+        <form id="usernameForm" name="usernameForm"> <!-- 用戶名輸入表單 -->
             <div class="form-group">
                 <input type="text" id="name" placeholder="名稱" autocomplete="off" class="form-control" />
+                <!-- 用戶名輸入框 -->
             </div>
             <div class="form-group">
                 <button type="submit" class="accent username-submit">開始聊天</button>
+                <!-- 提交按鈕 -->
             </div>
         </form>
     </div>
 </div>
 
+<!-- 聊天頁面，初始狀態為隱藏 -->
 <div id="chat-page" class="hidden">
     <div class="chat-container">
         <div class="chat-header">
-            <h2>WebSocket Chat</h2>
+            <h2>WebSocket Chat</h2> <!-- 聊天頁面標題 -->
         </div>
         <div class="connecting">
-            連接中...
+            連接中... <!-- 提示連接狀態 -->
         </div>
         <ul id="messageArea">
-
+            <!-- 聊天訊息顯示區域，訊息會動態插入此區域 -->
         </ul>
-        <form id="messageForm" name="messageForm">
+        <form id="messageForm" name="messageForm"> <!-- 發送訊息表單 -->
             <div class="form-group">
                 <div class="input-group clearfix">
                     <input type="text" id="message" placeholder="輸入文字..." autocomplete="off" class="form-control"/>
+                    <!-- 訊息輸入框 -->
                     <button type="submit" class="primary">傳送</button>
+                    <!-- 傳送按鈕 -->
                 </div>
             </div>
         </form>
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
-<script src="/js/main.js"></script>
+<!-- 引入外部 JavaScript 文件 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script> <!-- 引入 SockJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script> <!-- 引入 STOMP -->
+<script src="/js/main.js"></script> <!-- 引入主程式 -->
 </body>
 </html>
