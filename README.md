@@ -2,6 +2,7 @@
 
 ## 專案簡介
 這是一個基於 WebSocket 的即時聊天系統，提供簡單的用戶間消息交換功能。使用者可以在不同的聊天室中發送、接收消息，並進行即時交流。這個專案展示了如何使用 WebSocket 來實現即時雙向通信。
+![image](https://github.com/Poplollipop/chat/blob/main/demo.png)
 
 ## 技術
 - **前端**: HTML, CSS, JavaScript
