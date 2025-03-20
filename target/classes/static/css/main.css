@@ -147,3 +147,31 @@ button.accent {
     max-height: 600px; /* 設置最大高度 */
     position: relative; /* 相對定位 */
 }
+
+/* 訊息顯示區域 */
+#messageArea {
+    overflow-y: auto; /* 使訊息區域可以滾動 */
+    height: calc(100% - 120px); /* 設定訊息區域的高度，減去輸入框和按鈕的高度 */
+}
+
+/* 輸入框和送出按鈕容器 */
+#messageForm {
+    position: fixed; /* 固定在頁面底部 */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* 撐滿全寬 */
+    background-color: white; /* 背景色為白色 */
+    padding: 10px; /* 內邊距 */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 增加陰影效果 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+
+/* 輸入框 */
+#message {
+    flex-grow: 1; /* 輸入框撐滿剩餘空間 */
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
