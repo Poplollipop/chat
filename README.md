@@ -12,9 +12,12 @@
 1. 安裝所需依賴：
    ```bash
    mvn install
-2.啟動後端：
-```bash
-mvn spring-boot:run
+   ```
+   
+2. 啟動後端：
+   ```bash
+   mvn spring-boot:run
+   ```
 
 ```
 /chat
@@ -41,5 +44,6 @@ mvn spring-boot:run
  ├── pom.xml
  ├── .gitignore
 
+```
  ## 總結
 本專案展示了如何使用 WebSocket 技術實現即時聊天系統。前端和後端通過 WebSocket 進行實時通信，提供用戶間的消息發送和接收。這個系統可擴展為更多功能，比如聊天室、私人消息、消息存儲等。
